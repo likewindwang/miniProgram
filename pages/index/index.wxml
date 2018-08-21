@@ -1,0 +1,124 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="movie-box">
+        <view class="movie-img"></view>
+        <view class="movie-detail">
+            <text class="movie-name"></text> <!-- 电影名 -->
+            <text class="movie-loca"></text> <!-- 电影地区 -->
+            <text class="movie-time"></text> <!-- 电影时长 -->
+            <text class="movie-cast"></text> <!-- 演员 -->
+            <text class="movie-directors"></text> <!-- 导演 -->
+            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+        </view>
+    </view>
+    <view class="movie-box">
+        <view class="movie-img"></view>
+        <view class="movie-detail">
+            <text class="movie-name"></text> <!-- 电影名 -->
+            <text class="movie-loca"></text> <!-- 电影地区 -->
+            <text class="movie-time"></text> <!-- 电影时长 -->
+            <text class="movie-cast"></text> <!-- 演员 -->
+            <text class="movie-directors"></text> <!-- 导演 -->
+            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+        </view>
+    </view>
+    <view class="movie-box">
+        <view class="movie-img"></view>
+        <view class="movie-detail">
+            <text class="movie-name"></text> <!-- 电影名 -->
+            <text class="movie-loca"></text> <!-- 电影地区 -->
+            <text class="movie-time"></text> <!-- 电影时长 -->
+            <text class="movie-cast"></text> <!-- 演员 -->
+            <text class="movie-directors"></text> <!-- 导演 -->
+            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+        </view>
+    </view>
+    <view class="movie-box">
+        <view class="movie-img"></view>
+        <view class="movie-detail">
+            <text class="movie-name"></text> <!-- 电影名 -->
+            <text class="movie-loca"></text> <!-- 电影地区 -->
+            <text class="movie-time"></text> <!-- 电影时长 -->
+            <text class="movie-cast"></text> <!-- 演员 -->
+            <text class="movie-directors"></text> <!-- 导演 -->
+            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+        </view>
+    </view>
+    <view class="movie-box">
+        <view class="movie-img"></view>
+        <view class="movie-detail">
+            <text class="movie-name"></text> <!-- 电影名 -->
+            <text class="movie-loca"></text> <!-- 电影地区 -->
+            <text class="movie-time"></text> <!-- 电影时长 -->
+            <text class="movie-cast"></text> <!-- 演员 -->
+            <text class="movie-directors"></text> <!-- 导演 -->
+            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+        </view>
+    </view>
+    <view class="movie-box">
+        <view class="movie-img"></view>
+        <view class="movie-detail">
+            <text class="movie-name"></text> <!-- 电影名 -->
+            <text class="movie-loca"></text> <!-- 电影地区 -->
+            <text class="movie-time"></text> <!-- 电影时长 -->
+            <text class="movie-cast"></text> <!-- 演员 -->
+            <text class="movie-directors"></text> <!-- 导演 -->
+            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+        </view>
+    </view>
+    <view class="movie-box">
+        <view class="movie-img"></view>
+        <view class="movie-detail">
+            <text class="movie-name"></text> <!-- 电影名 -->
+            <text class="movie-loca"></text> <!-- 电影地区 -->
+            <text class="movie-time"></text> <!-- 电影时长 -->
+            <text class="movie-cast"></text> <!-- 演员 -->
+            <text class="movie-directors"></text> <!-- 导演 -->
+            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+        </view>
+    </view>
+    <view class="movie-box">
+        <view class="movie-img"></view>
+        <view class="movie-detail">
+            <text class="movie-name"></text> <!-- 电影名 -->
+            <text class="movie-loca"></text> <!-- 电影地区 -->
+            <text class="movie-time"></text> <!-- 电影时长 -->
+            <text class="movie-cast"></text> <!-- 演员 -->
+            <text class="movie-directors"></text> <!-- 导演 -->
+            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+        </view>
+    </view>
+    <view class="movie-box">
+        <view class="movie-img"></view>
+        <view class="movie-detail">
+            <text class="movie-name"></text> <!-- 电影名 -->
+            <text class="movie-loca"></text> <!-- 电影地区 -->
+            <text class="movie-time"></text> <!-- 电影时长 -->
+            <text class="movie-cast"></text> <!-- 演员 -->
+            <text class="movie-directors"></text> <!-- 导演 -->
+            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+        </view>
+    </view>
+    <view class="movie-box">
+        <view class="movie-img"></view>
+        <view class="movie-detail">
+            <text class="movie-name"></text> <!-- 电影名 -->
+            <text class="movie-loca"></text> <!-- 电影地区 -->
+            <text class="movie-time"></text> <!-- 电影时长 -->
+            <text class="movie-cast"></text> <!-- 演员 -->
+            <text class="movie-directors"></text> <!-- 导演 -->
+            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+        </view>
+    </view>
+    <view class="movie-box">
+        <view class="movie-img"></view>
+        <view class="movie-detail">
+            <text class="movie-name"></text> <!-- 电影名 -->
+            <text class="movie-loca"></text> <!-- 电影地区 -->
+            <text class="movie-time"></text> <!-- 电影时长 -->
+            <text class="movie-cast"></text> <!-- 演员 -->
+            <text class="movie-directors"></text> <!-- 导演 -->
+            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+        </view>
+    </view>                                        
+</view>

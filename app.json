@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/soon/soon",
+    "pages/top250/top250",
+    "pages/praise/praise"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "正在上映"
+            },
+            {
+                "pagePath": "pages/soon/soon",
+                "text": "即将上映"
+            },
+            {
+                "pagePath": "pages/top250/top250",
+                "text": "TOP250"
+            },
+            {
+                "pagePath": "pages/praise/praise",
+                "text": "口碑榜"
+            }            
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}
