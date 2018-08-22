@@ -1,124 +1,54 @@
-<!--index.wxml-->
 <view class="container">
-    <view class="movie-box">
-        <view class="movie-img"></view>
-        <view class="movie-detail">
-            <text class="movie-name"></text> <!-- 电影名 -->
-            <text class="movie-loca"></text> <!-- 电影地区 -->
-            <text class="movie-time"></text> <!-- 电影时长 -->
-            <text class="movie-cast"></text> <!-- 演员 -->
-            <text class="movie-directors"></text> <!-- 导演 -->
-            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
+    <view class="section">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="picker">
+                {{region[1]}}
+            </view>
+        </picker>
+        <view class="search-box">
+            <input type="text" placeholder="请输入搜索关键字" bindinput="searchText"/>
         </view>
+        <button class="search-btn" bindtap='onSearch'>搜索</button>
     </view>
-    <view class="movie-box">
-        <view class="movie-img"></view>
-        <view class="movie-detail">
-            <text class="movie-name"></text> <!-- 电影名 -->
-            <text class="movie-loca"></text> <!-- 电影地区 -->
-            <text class="movie-time"></text> <!-- 电影时长 -->
-            <text class="movie-cast"></text> <!-- 演员 -->
-            <text class="movie-directors"></text> <!-- 导演 -->
-            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
-        </view>
+    <view class="box">
+    <!-- 顶部轮播图 -->
+    <view class="sw-box">
+        <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}"wx:key>
+                <swiper-item>
+                    <image src="{{items}}" class="slide-image" width="355" height="150"/>
+                </swiper-item>
+            </block>
+        </swiper>    
     </view>
-    <view class="movie-box">
-        <view class="movie-img"></view>
-        <view class="movie-detail">
-            <text class="movie-name"></text> <!-- 电影名 -->
-            <text class="movie-loca"></text> <!-- 电影地区 -->
-            <text class="movie-time"></text> <!-- 电影时长 -->
-            <text class="movie-cast"></text> <!-- 演员 -->
-            <text class="movie-directors"></text> <!-- 导演 -->
-            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
-        </view>
+    <!-- 中间内容标题 -->
+    <view class="content-title">{{contentTitle}}</view>
+    <!-- 中间内容滚动区域 -->
+        <view class="movie-box" wx:for="{{homeList}}" wx:key data-id="{{item.id}}" bindtap="toDetail">
+            <view class="movie-img">
+                <image class="list-img" src="{{item.img}}"/>
+            </view>
+            <view class="movie-detail">
+                <text class="movie-text movie-name">
+                    片名: <text class="content-text">{{item.name}}</text>
+                </text> <!-- 电影名 -->
+                <text class="movie-text movie-rate">
+                    评分: <text class="content-text">{{item.rate}}</text>
+                </text> <!-- 评分 -->
+                <text class="movie-text movie-directors">
+                    导演: <text class="content-text">{{item.directors}}</text>
+                </text> <!-- 导演 -->
+                <text class="movie-text movie-cast">
+                    演员: <text class="content-text">{{item.casts}}</text>
+                </text> <!-- 演员 -->
+                <text class="movie-text movie-loca">
+                    地区: <text class="content-text">{{item.location}}</text>
+                </text> <!-- 电影地区 -->
+            </view>
+        </view> 
     </view>
-    <view class="movie-box">
-        <view class="movie-img"></view>
-        <view class="movie-detail">
-            <text class="movie-name"></text> <!-- 电影名 -->
-            <text class="movie-loca"></text> <!-- 电影地区 -->
-            <text class="movie-time"></text> <!-- 电影时长 -->
-            <text class="movie-cast"></text> <!-- 演员 -->
-            <text class="movie-directors"></text> <!-- 导演 -->
-            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
-        </view>
-    </view>
-    <view class="movie-box">
-        <view class="movie-img"></view>
-        <view class="movie-detail">
-            <text class="movie-name"></text> <!-- 电影名 -->
-            <text class="movie-loca"></text> <!-- 电影地区 -->
-            <text class="movie-time"></text> <!-- 电影时长 -->
-            <text class="movie-cast"></text> <!-- 演员 -->
-            <text class="movie-directors"></text> <!-- 导演 -->
-            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
-        </view>
-    </view>
-    <view class="movie-box">
-        <view class="movie-img"></view>
-        <view class="movie-detail">
-            <text class="movie-name"></text> <!-- 电影名 -->
-            <text class="movie-loca"></text> <!-- 电影地区 -->
-            <text class="movie-time"></text> <!-- 电影时长 -->
-            <text class="movie-cast"></text> <!-- 演员 -->
-            <text class="movie-directors"></text> <!-- 导演 -->
-            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
-        </view>
-    </view>
-    <view class="movie-box">
-        <view class="movie-img"></view>
-        <view class="movie-detail">
-            <text class="movie-name"></text> <!-- 电影名 -->
-            <text class="movie-loca"></text> <!-- 电影地区 -->
-            <text class="movie-time"></text> <!-- 电影时长 -->
-            <text class="movie-cast"></text> <!-- 演员 -->
-            <text class="movie-directors"></text> <!-- 导演 -->
-            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
-        </view>
-    </view>
-    <view class="movie-box">
-        <view class="movie-img"></view>
-        <view class="movie-detail">
-            <text class="movie-name"></text> <!-- 电影名 -->
-            <text class="movie-loca"></text> <!-- 电影地区 -->
-            <text class="movie-time"></text> <!-- 电影时长 -->
-            <text class="movie-cast"></text> <!-- 演员 -->
-            <text class="movie-directors"></text> <!-- 导演 -->
-            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
-        </view>
-    </view>
-    <view class="movie-box">
-        <view class="movie-img"></view>
-        <view class="movie-detail">
-            <text class="movie-name"></text> <!-- 电影名 -->
-            <text class="movie-loca"></text> <!-- 电影地区 -->
-            <text class="movie-time"></text> <!-- 电影时长 -->
-            <text class="movie-cast"></text> <!-- 演员 -->
-            <text class="movie-directors"></text> <!-- 导演 -->
-            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
-        </view>
-    </view>
-    <view class="movie-box">
-        <view class="movie-img"></view>
-        <view class="movie-detail">
-            <text class="movie-name"></text> <!-- 电影名 -->
-            <text class="movie-loca"></text> <!-- 电影地区 -->
-            <text class="movie-time"></text> <!-- 电影时长 -->
-            <text class="movie-cast"></text> <!-- 演员 -->
-            <text class="movie-directors"></text> <!-- 导演 -->
-            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
-        </view>
-    </view>
-    <view class="movie-box">
-        <view class="movie-img"></view>
-        <view class="movie-detail">
-            <text class="movie-name"></text> <!-- 电影名 -->
-            <text class="movie-loca"></text> <!-- 电影地区 -->
-            <text class="movie-time"></text> <!-- 电影时长 -->
-            <text class="movie-cast"></text> <!-- 演员 -->
-            <text class="movie-directors"></text> <!-- 导演 -->
-            <text class="movie-genres"></text> <!-- 戏剧 剧情 -->
-        </view>
-    </view>                                        
+    <view class="paging" hidden='{{hideBox}}'>
+        <button class="moreBtn" type="primary" bindtap="getMore">加载更多</button>
+    </view>                        
 </view>
