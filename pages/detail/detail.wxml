@@ -1,0 +1,68 @@
+<view class="container">
+    <!-- 电影详情 -->
+    <view class="introduce">
+        <view class="intro-left">
+            <image class="big-img" src="{{titleImg}}"/>
+        </view>
+        <view class="intro-right">
+            <view class="big-right big-name">
+                <view class="big-title">片名：</view>
+                <view class="content name">{{name}}</view>
+            </view>
+            <view class="big-right big-derec">
+                <view class="big-title">导演：</view>
+                <view class="content derec">{{derec}}</view>
+            </view>
+            <view class="big-right big-cast">
+                <view class="big-title">演员：</view>
+                <view class="content cast">{{cast}}</view>
+            </view>
+            <view class="big-right big-time">
+                <view class="big-title">时长：</view>
+                <view class="content time">{{time}}</view>
+            </view>
+            <view class="big-right big-tags">
+                <view class="big-title">类型：</view>
+                <view class="content tags">{{tags}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="detail-story list-title">剧情简介：</view>
+    <view class="synopsis">{{summary}}</view>
+    <!-- 主演 -->
+    <view class="main-casts list-title">主演：<text class="caster" wx:for="{{ctArr}}" wx:key>{{item.name}} </text></view>
+    <view class="section section_gap">
+        <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+            <view class="scroll-view-item_H" wx:for="{{ctArr}}" wx:key>
+                <image src="{{item.avatars.medium}}" class="h-image"/>
+            </view>
+        </scroll-view>
+    </view>
+    <!-- 花絮视频 -->
+    <!-- <view class="section section_gap">
+        <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+            <view class="scroll-view-item_H" wx:for="{{vArr}}" wx:key>
+                <video  src="{{item.resource_url}}" class="h-image"/>
+            </view>
+        </scroll-view>
+    </view>     -->
+    <!-- 剧照 -->
+    <view class="movie-photos list-title">剧照：</view>
+    <view class="section section_gap sec-photos">
+        <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+            <view class="scroll-view-item_H photos-view" wx:for="{{phArr}}" wx:key>
+                <image src="{{item.thumb}}" class="h-image"/>
+            </view>
+        </scroll-view>
+    </view>
+    <!-- 评论 -->
+    <view class="movie-appraise list-title">评论：</view>
+    <view class="appraise-item" wx:for="{{apArr}}" wx:key>
+        <view class="user-detail">
+            <view class="user-img"><image src="{{item.author.avatar}}"/></view>
+            <view class="user-name">{{item.author.name}}</view>
+            <!-- <view class="user-title">{{item.title}}</view> -->
+        </view>
+        <view class="user-content">{{item.summary}}</view>
+    </view>
+</view>

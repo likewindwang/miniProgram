@@ -1,5 +1,5 @@
 <view class="container">
-    <view class="section">
+    <!-- <view class="section">
         <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
             <view class="picker">
                 {{region[1]}}
@@ -9,18 +9,25 @@
             <input type="text" placeholder="请输入搜索关键字" bindinput="searchText"/>
         </view>
         <button class="search-btn" bindtap='onSearch'>搜索</button>
-    </view>
+    </view> -->
     <view class="box">
     <!-- 顶部轮播图 -->
     <view class="sw-box">
-        <swiper indicator-dots="{{indicatorDots}}"
+        <!-- <swiper indicator-dots="{{indicatorDots}}"
         autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
             <block wx:for="{{imgUrls}}"wx:key>
                 <swiper-item>
-                    <image src="{{items}}" class="slide-image" width="355" height="150"/>
+                    <image src="{{item}}" class="slide-image" width="355" height="150"/>
                 </swiper-item>
             </block>
-        </swiper>    
+        </swiper>     -->
+<view class="section section_gap">
+  <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+    <view class="scroll-view-item_H" wx:for="{{imgArr}}" wx:key>
+        <image src="{{item}}" class="h-image"/>
+    </view>
+  </scroll-view>
+</view>
     </view>
     <!-- 中间内容标题 -->
     <view class="content-title">{{contentTitle}}</view>

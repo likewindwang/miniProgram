@@ -1,0 +1,117 @@
+.container {
+    height: 100%;
+    padding: 5px;
+}
+.introduce {
+    height: 200px;
+    width: 100%;
+    background-color: rgba(204, 204, 204, .2);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.list-title {
+    margin: 6px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom:1px solid #ccc;
+
+}
+.caster {
+    font-size: 16px;
+    font-weight: normal;
+}
+.synopsis {
+    flex-grow: 1;
+    font-size: 14px;
+    text-indent: 2em;
+}
+.intro-left {
+    width: 150px;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+.big-img {
+    width: 100%;
+    height: 100%;
+}
+.intro-right {
+    flex-grow: 1;
+    display: felx;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.big-right {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.big-right .big-title {
+    height:40px;
+    font-size: 16px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.big-right  .content {
+    flex-shrink: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+.section {
+    height: 120px;
+}
+.scroll-view_H{
+  height: 100%;
+  white-space: nowrap;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  margin: 0 3px;
+}
+.scroll-view-item_H:nth-child(1) { margin-left: 0; }
+.scroll-view-item_H:nth-last-child(1) { margin-right: 0; }
+.h-image {
+    width: 100%;
+    height: 100%;
+}
+.photos-view { width: 70%; }
+.sec-photos { height: 160px; }
+.appraise-item {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+    background-color: rgba(204, 204, 204, .2)
+}
+.user-detail {
+    flex-shrink: 0;
+    padding-top:5px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px dashed #ccc;
+}
+.user-content {
+    flex-shrink: 0;
+    font-size: 14px;
+    text-indent: 2em;
+    padding-bottom:10px;
+}
+.user-img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.user-img image {
+    width: 100%;
+    height: 100%;
+}
+.user-name {
+    font-size: 14px;
+    font-weight: bold;
+}
