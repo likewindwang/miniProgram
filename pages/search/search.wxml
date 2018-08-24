@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="search-radio">
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{items}}" wx:key>
+                <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+        </radio-group>
+    </view>
+    <view class="search-box">
+        <input class="key-w" type="text" placeholder='请输入关键词' bindinput="getValue"/>
+        <button class="sousuobtn" type='primary' bindtap="toD">搜索</button>
+    </view>
+</view>

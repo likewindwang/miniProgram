@@ -1,0 +1,23 @@
+.container {
+    height: 100%;
+    padding: 20px;
+}
+.search-radio {
+    margin-top: 80px;
+}
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.search-box {
+}
+.key-w {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 0 10px;
+    overflow: hidden;
+}
