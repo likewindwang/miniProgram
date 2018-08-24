@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="hot-title">热映经典</view>
+    <view class="hot-box">
+        <view class="hot-play" bindtap="toHot" data-url='/v2/movie/in_theaters&value=观影嗨翻天'>正在热映</view>
+        <view class="comming-soon" bindtap="toHot" data-url='/v2/movie/coming_soon&value=即将到来'>即将上映</view>
+        <view class="tp-250" bindtap="toHot" data-url='/v2/movie/top250&value=重温经典'>TOP250</view>
+    </view>
+    <view class="list-title">榜单电影</view>
+    <view class="list-box">
+        <view class="good-list" bindtap="toPraise" data-url='/v2/movie/weekly&value=有口碑'>口碑榜</view>
+        <view class="am-list" bindtap="toPraise" data-url='/v2/movie/us_box&value=北美磅单'>北美票房榜</view>
+        <view class="new-list" bindtap="toHot" data-url='/v2/movie/new_movies&value=新鲜出炉'>新片榜</view>
+    </view>
+</view>

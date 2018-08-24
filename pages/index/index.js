@@ -1,4 +1,4 @@
-const app = getApp()
+{}const app = getApp()
 Page({
 
   /**
@@ -25,13 +25,19 @@ Page({
       },
       hideBox: true,
       imgArr: [],
-      imgBool: true
+      imgBool: true,
+      apiUrl: '',
+      tpTitle: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+      this.setData({
+          apiUrl: options.url,
+          tpTitle: options.value
+      })
       wx.showLoading({
           title: '玩命加载中...'
       })
@@ -41,7 +47,8 @@ Page({
   getHotData(){
       let _this = this
       wx.request({
-          url: app.globalData.basicApi + '/v2/movie/in_theaters',
+          url: app.globalData.basicApi + _this.data.apiUrl,
+        //   url: app.globalData.basicApi + '/v2/movie/in_theaters',
         //   url: app.globalData.basicApi + '/v2/movie/search?q=张艺谋',
         //   url: app.globalData.basicApi + '/v2/movie/search?tag=喜剧',
         //   url: app.globalData.basicApi + '/v2/movie/coming_soon',

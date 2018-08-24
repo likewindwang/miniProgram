@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #ccc, #fff)
+}
+.hot-box, .list-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 20px;
+}
+.hot-box {}
+.list-box {}
+.hot-play, .comming-soon, .tp-250, .good-list, .am-list, .new-list {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(134, 229, 241);
+    background: linear-gradient(-45deg, red, blue)
+}
+.hot-play {
+}
+.comming-soon {
+}
+.tp-250 {
+}
+.good-list {
+}
+.am-list {
+}
+.new-list {
+}
+.hot-title, .list-title {
+    margin-top:10px;
+    padding-left:10px;
+    font-weight:bold;
+    color: #ccc;
+}

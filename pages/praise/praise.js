@@ -25,13 +25,19 @@ Page({
         },
         hideBox: true,
         imgArr: [],
-        imgBool: true
+        imgBool: true,
+        apiUrl: '',
+        tpTitle: ''
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        this.setData({
+            apiUrl: options.url,
+            tpTitle: options.value
+        })
         wx.showLoading({
             title: '玩命加载中...'
         })
@@ -47,7 +53,7 @@ Page({
             //   url: app.globalData.basicApi + '/v2/movie/coming_soon',
             //   url: app.globalData.basicApi + '/v2/movie/weekly',
             //   url: app.globalData.basicApi + '/v2/movie/top250',
-            url: app.globalData.basicApi + '/v2/movie/us_box',
+            url: app.globalData.basicApi + _this.data.apiUrl,
             method: 'GET',
             header: {
                 'Content-Type': "application/xml"

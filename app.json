@@ -1,8 +1,10 @@
 {
   "pages":[
-      "pages/index/index",
-      "pages/detail/detail",
-    
+    "pages/home/home",
+    "pages/search/search",
+    "pages/me/me",
+    "pages/index/index",
+    "pages/detail/detail",
     "pages/soon/soon",
     "pages/top250/top250",
     "pages/praise/praise"
@@ -16,20 +18,16 @@
     "tabBar": {
         "list": [
             {
-                "pagePath": "pages/index/index",
-                "text": "正在上映"
+                "pagePath": "pages/home/home",
+                "text": "首页"
             },
             {
-                "pagePath": "pages/soon/soon",
-                "text": "即将上映"
+                "pagePath": "pages/search/search",
+                "text": "搜索"
             },
             {
-                "pagePath": "pages/top250/top250",
-                "text": "TOP250"
-            },
-            {
-                "pagePath": "pages/praise/praise",
-                "text": "口碑榜"
+                "pagePath": "pages/me/me",
+                "text": "我"
             }            
         ]
     },
